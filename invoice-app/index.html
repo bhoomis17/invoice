@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Invoice Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>My Company</h1>
+
+<button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+
+<h2>Invoice Generator</h2>
+
+<p id="invoiceInfo"></p>
+
+<input type="text" id="client" placeholder="Client Name">
+
+<div id="items"></div>
+
+<button onclick="addItem()">+ Add Item</button>
+
+<h3 id="total">Total: ₹0</h3>
+
+<button onclick="generatePDF()">Download PDF</button>
+<button onclick="saveInvoice()">Save Invoice</button>
+
+<h3>Saved Invoices</h3>
+<ul id="savedList"></ul>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
